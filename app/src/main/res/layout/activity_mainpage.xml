@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qkx.wisdomwardrobe.MainpageActivity">
+
+    <include
+        android:id="@+id/title_manpage"
+        layout="@layout/title"></include>
+
+    <Button
+        android:id="@+id/changeCity_bt"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000FF"
+        android:text="更换城市"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageIcon_mainpage_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_manpage"
+        android:scaleType="fitXY"
+        android:src="@drawable/fine" />
+
+    <RelativeLayout
+        android:id="@+id/rl_1_mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/title_manpage"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/layout_background">
+
+        <RelativeLayout
+            android:id="@+id/rl_2_mainpage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/cityName_mainpage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="无数据"
+                android:textColor="@color/colorCity"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/temperature_mainpage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/cityName_mainpage_tv"
+                android:text="0℃"
+                android:textColor="@color/colorCity"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/weatherIcon_mainpage_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detPosition_mainpage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/rl_1_mainpage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_background"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/suggest_mainpage_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_below="@id/detPosition_mainpage_tv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_background"
+        android:text="穿衣建议：无数据"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/warmSuggestTV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/suggest_mainpage_tv"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="小柜推荐--您当前季节适合穿："
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/warmSuggestTV"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/noClothes_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您衣柜里还没有当前季节的衣服\n快去扫码添加吧！"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:background="@drawable/textview_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/suggestClothes_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+            <TextView
+                android:id="@+id/tap"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:text="点击以查看衣服所在位置 ，长按以取出"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

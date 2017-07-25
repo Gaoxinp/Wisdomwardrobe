@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tile_background"
+        android:gravity="center"
+        android:text="智慧衣柜"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <ImageView
+        android:id="@+id/QRCode_title"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/saoma_need" />
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context="com.qkx.wisdomwardrobe.MainActivity">
+    <include layout="@layout/title"></include>
+
+    <LinearLayout
+        android:id="@+id/activity_login_RLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/activity_login_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:hint="账号/手机号"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:textColor="#1A1A1A"
+            android:textColorHint="#A9A9A9"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/activity_login_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/activity_login_et_id"
+            android:background="#ffffff"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingBottom="1dp"
+            android:paddingLeft="8dp"
+            android:textColor="#1A1A1A"
+            android:textColorHint="#A9A9A9"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/activity_login_bt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/activity_login_et_password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/activity_login_button_shape_normal"
+            android:gravity="center"
+            android:text="登   录"
+            android:textSize="18dp"
+            android:onClick="Login"
+            android:textColor="#ffffff"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/activity_login_tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:text="新用户注册"
+        android:textSize="15dp"
+        android:textColor="@drawable/activity_main_bt_login_pressed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:clickable="true"
+        />
+</RelativeLayout>

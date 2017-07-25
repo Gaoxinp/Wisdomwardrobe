@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <drawable name="activity_main_bt_login_normal">#9F79EE</drawable>
+    <drawable name="activity_main_bt_login_pressed">#5CACEE</drawable>
+    <color name="white">#ffffff</color>
+    <color name="blue">#0000CD</color>
+    <color name="colorCity">#b23aee</color>
+    <color name="green">#7CFC00</color>
+</resources>
